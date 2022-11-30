@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gmail account creation form</title>
+        <style>
+            body {
+                margin: 0%;
+            }
+            video {
+                position: fixed;
+            }
+            #signupForm {
+                position: absolute;
+                top: 15%;
+                left: 35%;
+                min-width: 350px;
+                border: 1px solid white;
+                border-radius: 4px;
+                padding-left: 40px;
+            }
+            input {
+                width: 300px;
+                min-width: 100px;
+                border: none;
+                padding: 10px;
+                margin-bottom: 10px;
+                background-color: whitesmoke;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            input:focus {
+                outline: none;
+                color: white;
+                background-color: steelblue;
+                opacity: 0.35;
+            }
+            button {
+                margin: 20px;
+                width: 80px;
+                border-radius: 4px;
+                height: 30px;
+                color: white;
+                font-size: 18px;
+                border: none;
+                background-color: rgb(175, 102, 243);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <video autoplay muted loop >
+                <source src="Background_Video.mp4" type="video/mp4">
+            </video>
+            <div id="signupForm">
+                <form action="">
+                    <h1>Create Gmail Account</h1>
+                    <input type="text" name="full_name" placeholder="Full Name">
+                    <br>
+                    <input type="number" name="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                    <br>
+                    <input type="email" name="email_id" placeholder="Enter email id" required>
+                    <br>
+                    <button>Reset</button>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

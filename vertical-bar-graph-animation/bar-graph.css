@@ -1,0 +1,77 @@
+.vertical-bar-graph {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.bar-with-percentage {
+    display: inline-block;
+    text-align: center;
+}
+
+.vertical-bar-inner-1 {
+    display: inline-block;
+    width: 30px;
+    height: 250px;
+    background-color: rgb(202, 196, 196);
+    margin: 1em;
+}
+
+.vertical-bar-inner-2 {
+    background-color: white;
+    height: 100%;
+}
+
+#bar1 .vertical-bar-inner-2 {
+    width: 100%;
+    height: 70%;
+    animation-name: bar1filler;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bar1filler {
+    0% {
+        height: 100%;
+        background-color: white;
+    }
+    100% {
+        height: 70%;
+        background-color: white;
+    }
+}
+
+#bar2 .vertical-bar-inner-2 {
+    width: 100%;
+    height: 60%;
+    animation-name: bar2filler;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bar2filler {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+#bar3 .vertical-bar-inner-2 {
+    width: 100%;
+    height: 20%;
+    animation-name: bar3filler;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bar3filler {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 20%;
+    }
+}
